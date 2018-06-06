@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@import "config/bootstrap_variables";
+
 @import "components/users_table";
-@import "components/navbar"
+@import "components/navbar";
+@import "components/form";
