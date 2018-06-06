@@ -6,12 +6,14 @@
           <th>Name</th>
           <th>Phone Number</th>
         </tr>
-        <% @users.each do |user| %>
-          <tr>
-            <td><%= user.name %></td>
-            <td><%= user.phone_number %></td>
-          </tr>
-        <% end %>
+        <div class="users">
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= user.name %></td>
+              <td><%= user.phone_number %></td>
+            </tr>
+          <% end %>
+        </div>
       </table>
     </div>
   </div>

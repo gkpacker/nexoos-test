@@ -3,6 +3,14 @@
     <div class="col-md-4 col-md-offset-4">
       <div class="form">
         <%= form_for @user do |f| %>
+          <% if @user.errors.any? %>
+            <ul class="list-unstyled alert alert-danger">
+              <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+                <br>
+              <% end %>
+            </ul>
+          <% end %>
           <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
           <%= f.text_field :phone_number, placeholder: "Phone number", class: "form-control" %>
           <%= f.submit class: "btn btn-block btn-primary" %>
