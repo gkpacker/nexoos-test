@@ -1,0 +1,9 @@
+.users-table {
+  margin-top: 100px;
+  width: 100%;
+  background-color: red;
+  .table-head {
+    display: flex;
+    justify-content: space-around;
+  }
+}
